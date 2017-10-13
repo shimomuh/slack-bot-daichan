@@ -1,0 +1,30 @@
+{
+  "name": "slack-bot-daichan",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository": {
+    "url": "https://github.com/shimomuh/slack-bot-daichan.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run compile",
+    "compile": "browserify -t babelify -p gasify src/main.js -o dist/main.js",
+    "lint": "eslint src"
+  },
+  "author": "shimomuh <shimomuh0501@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.0.1",
+    "babel-preset-latest": "6.24.1",
+    "babelify": "7.3.0",
+    "browserify": "14.4.0",
+    "eslint": "4.8.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.2.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "gasify": "0.1.2"
+  }
+}
